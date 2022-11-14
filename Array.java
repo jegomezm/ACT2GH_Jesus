@@ -10,5 +10,12 @@ public class Array {
           System.out.print(numeros[i] + " ");
         }
         System.out.println();
+        int[] count = new int[RANGOFIN + 1];
+        for (int i = 0; i < NUMELEMENTOS; i++) {
+          count[numeros[i]]++;
+        }
+        for (int i = RANGOINICIO; i <= RANGOFIN; i++) {
+          System.out.println(i + " aparece " + count[i] + " veces");
+        }
     }    
 }
