@@ -1,9 +1,14 @@
-public class Main {
-    public static int[] createArray() {
-        int[] array = new int[20];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 10 + 1);
+public class Array {
+    public static void main (String[] args) {
+    	final int NUMELEMENTOS = 20;
+        final int RANGOINICIO = 1;
+        final int RANGOFIN = 10;
+        
+        int[] numeros = new int[NUMELEMENTOS];
+        for (int i = 0; i < NUMELEMENTOS; i++) {
+          numeros[i] = (int)(Math.random() * (RANGOFIN - RANGOINICIO + 1) + RANGOINICIO);
+          System.out.print(numeros[i] + " ");
         }
-        return array;
+        System.out.println();
     }    
 }
